@@ -9,7 +9,7 @@ $.ajax({
 );
 
 $('.wrapper').on('click', '.balanceBtn', function() {
-  $('#balance').animate({'font-size': '5em'}, 1000, function() {
+  $('#balance').animate({'font-size': '4em'}, 1000, function() {
     $.ajax({
       method: 'GET',
       url: '/balance',
