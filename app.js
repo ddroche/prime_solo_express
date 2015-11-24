@@ -23,7 +23,7 @@ app.route('/balance', function(req, res, next) {
 
 app.use(express.static('static'));
 
-var server = app.listen(3000, function() {
+var server = app.listen(process.env.PORT || 3000, function() {
   var host = this.address().address;
   var port = this.address().port;
   console.log('App listening at http://%s:%s', host, port);
